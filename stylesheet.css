@@ -1,0 +1,273 @@
+body{
+	margin: 0;
+}
+@font-face{
+	font-family: "alphabetizedct";
+	src:url('alphabetizedct.ttf');
+}
+#mainbody{
+	width: auto;
+	height: auto;
+}
+#topnav{
+	height: 60px;
+	background: transparent;
+	top: 0px;
+	width: 100%;
+	/*height: 60px;*/
+	padding-bottom: 9px;
+	overflow: hidden;
+	z-index: 9999;
+}
+#topnav ul{
+	list-style-type: none;
+	text-align: center;
+	background: black;	
+}
+#topnav li{
+	display: inline;
+	float: left;
+}
+#topnav a{
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	font-weight: bold;
+	font-family: alphabetizedct;
+	font-size: 35px;
+	font-weight: bold;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+#topnav a#review:hover, a#contact:hover{
+	background: rgb(218, 216, 216);
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+	text-decoration: none;
+	font-weight: bold;
+}
+/*------------------sticky navigation-----------*/
+.content {
+  padding: 16px;
+}
+.sticky {
+  position: sticky;
+}
+.sticky + .content {
+  padding-top: 0px;
+}
+#maincontent{
+	height: auto;
+}
+li{
+    list-style-type: none;
+}
+.pic1{
+	text-decoration: none;
+}
+.pic1:hover .pic2{
+	position: relative;
+	transform: scale(1);
+}
+.pic2{
+    position: relative;
+    /* left: 0px; */
+    margin-top: -253px;
+    margin-left: 68px;
+    overflow: hidden;
+    width: 90%;
+    -webkit-transform: scale(0);
+    transition: .3s ease;
+}
+.centerbox{
+	margin-top: 10%;
+	margin-bottom: 8%;
+	/* box-shadow: 0 0 8px rgba(0,0,0,0.4);  */
+	/* background-color: rgb(188, 238, 240); */
+}
+.profilepic{
+	opacity: 1.0;
+	margin-left: -5%;
+}
+.profiledesc h1{
+ 	font-family: alphabetizedct;
+	font-size: 70px;
+	font-weight: bold;
+	text-align: center;
+	background-color: rgb(226, 250, 249);
+}
+p{
+	font-family: alphabetizedct;
+	font-size: 30px;
+	color: #000;
+}
+/*-----------------------ini recommended comic*/
+.recommendedcomic{
+	width: 100%;
+	height: auto;
+	background-color: whitesmoke;
+	height: auto;
+}
+.recommendedcomic p#rcm{
+	background: rgb(235, 240, 241);
+	color: black;
+	font-family:  alphabetizedct;
+	font-size: 40px;
+	font-weight: bold;
+	padding-left: 60px;
+	margin-top: 0px;
+}
+
+/*---------------------------this is comment box-------*/
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    /*height: 203px;*/
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+.navbar{
+  position:fixed;
+  width:100%;
+  background-color:#fff;
+  z-index:10;
+  border-radius:0;
+  border-color:transparent;
+}
+.navbar-default .navbar-nav > li > a{
+  color:#000;
+  
+}
+.tengah{
+	text-align: center;
+}
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display:none;
+    z-index: 9999;
+}
+
+/*//mgnb*/
+.banner-comic{
+	margin-top: -5%;
+	background-color: #f6e4e8;
+	width: auto;
+	height: 300px;
+}
+.banner-comic img{
+	height: 170px;
+	margin-top: 40px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.comic-title{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	margin-top: -13%;
+	margin-left: 2%;
+	z-index: 1;
+	font-size: 50px;
+	color: cornflowerblue;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.comic-author{
+	position: absolute;
+	width: 100%;
+	text-align: center;
+	margin-top: -120px;
+	margin-left: 2%;
+	font-size: 40px;
+	color: #DD78D3;
+}
+.desc{
+	position: absolute;
+	width: 50%;
+	text-align: center;
+	margin-top: -60px;
+	margin-left: 37%;
+	z-index: 1;
+	font-size: 30px;
+	font-weight: bold;
+	color: black;
+}
+
+
+/* reviewss */
+#romul li a img{  
+  opacity: 0.85;
+}
+#romul li a:hover img {       
+  opacity: 1.0; 
+}
+#genrelist ul{
+	padding: 0;
+	list-style-type: none;
+}
+#genrelist ul li{
+	display: inline-table;
+	border: 1px solid antiquewhite;
+	width: 200px;
+}
+#genrelist{
+	text-align: justify;
+	font-family: alphabetizedct;
+	margin-bottom: 50px;
+	margin-left: 50px;
+	margin-top: 20px;
+	font-size: 32px;
+	color: black;
+}
+#genrelist a{
+	text-decoration: none;
+}
+#genrelist p{
+	margin-top: 20px;
+	padding-right: 40px;
+	padding-left: 40px;
+}
+#genrelist img{
+	margin-top:0px;
+	width: 240px;
+	height: 240px;
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.2); 
+}
+.title{
+	font-family: alphabetizedct;
+ font-size: 70px;
+ font-weight: bold;
+ text-align: center;
+ background-color: rgb(200, 214, 214);
+}
+.reviewvalue{
+	text-align: justify;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.reviewvalue p{
+	background-color: rgb(221, 233, 229);
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>My Review Website</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+
+</head>
+<body>
+    <div>
+        <div class="row" class="background" style="background-image: url(image/bg_new_bg.png); background-repeat: no-repeat; background-size: 100%;">
+            <div class="col-md-3 leftbox"></div>
+            <div class="col-md-6 centerbox">
+                <div class="row">
+                    <div class="col-md-5 leftpane">
+                        <div class="profilepic">
+                            <img src="image\3bluechair.jpg" alt="foto" class="img img-thumbnail">    
+                        </div>
+                    </div>
+                    <div class="col-md-6 rightpane profiledesc">
+                        <h1>W E L C O M E</h1>
+                        <h1>to My Blog !</h1>
+                        <center><a href="page1.html">
+                            <input type="button" class="btn btn-info" name="" id="btn1" value="Click Here to See Review" style="margin-top: 10%; font-family: alphabetizedct; font-size: 30px;">
+                        </a></center>
+                    </div>
+                    <div class=" col-md-12">
+                        <p style="margin: 2%;background-color: rgb(206, 251, 249);">Hi, everyone! this is my blog which provides review from any korean drama that i have ever read. I always trying to give honest from my subjective. Without any further do lets checkout the reviews!</p>
+                    </div>  
+                </div>
+            </div>
+            <div class="col-md-3 rightbox"></div>
+        </div>
+        <a id="back-to-top" href="#" class="btn btn-primary btn-lg back-to-top" role="button" title="Click to return on the top page" data-toggle="tooltip" data-placement="left"><span class="glyphicon glyphicon-chevron-up"></span></a>	
+    </div>
+</body>
+<script>
+window.onscroll = function() {myFunction()};
+
+var topnav = document.getElementById("topnav");
+var sticky = topnav.offsetTop;
+
+function myFunction() {
+	if (window.pageYOffset >= sticky) {
+    topnav.classList.add("sticky");
+ 	} else {
+    topnav.classList.remove("sticky");
+  	}
+}
+$(document).ready(function(){
+     $(window).scroll(function () {
+            if ($(this).scrollTop() > 50) {
+                $('#back-to-top').fadeIn();
+            } else {
+                $('#back-to-top').fadeOut();
+            }
+        });
+        // scroll body to 0px on click
+        $('#back-to-top').click(function () {
+            $('#back-to-top').tooltip('hide');
+            $('body,html').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+        
+        $('#back-to-top').tooltip('show');
+
+});
+</script>
+</html>

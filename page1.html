@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>My Review Website</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="css/swiper.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="tools/js/swiper.min.js"></script>
+</head>
+<body>
+    <div id="topnav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="page1.html" id="review">My Reviews</a></li>
+            <li><a href="page3.html" id="contact">Contacts</a></li>
+        </ul>				
+    </div>
+    <div class="banner-comic">
+        <img src="image\feedback.png" style="margin-left: 30%; margin-top: 7%;">
+        <p class="comic-title">M Y  R E V I E W</p>
+        <p class="comic-author">Korean Drama</p>
+        <p class="desc">"Below is the list of KDrama (Korean Drama) that i have reviewed, enjoy!"</p>
+    </div>
+    <div id="genrelist">
+            <ul id="romul">	
+                <li>
+                    <a href="page2.html" style="color: black;"><img src="image\SKY_castle-GP.jpg"/>
+                    <center><b>SKY Castle</a>
+                    </b>
+                </li>
+                <li>
+                    <a href="#" style="color: black;"><img src="image\Voice.jpg"/>
+                    <center><b>Voice</a>
+                    </b>
+                </li>
+                <li>
+                    <a href="#" style="color: black;"><img src="image\RDoctor.jpg"/>
+                    <center><b>Romantic Doctor Kim</a>
+                    </b>
+                </li>
+                <li>
+                    <a href="#" style="color: black;"><img src="image\kill me.jpg"/>
+                    <center><b>Kill Me Heal Me</a>
+                    </b>
+                </li>
+                <li>
+                    <a href="#" style="color: black;"><img src="image\maddog.jpg"/>
+                    <center><b>Mad Dog</a>
+                    </b>
+                </li>
+            </ul>
+        </div>
+</body>
+<script>
+        window.onscroll = function() {myFunction()};
+        
+        var topnav = document.getElementById("topnav");
+        var sticky = topnav.offsetTop;
+        
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+            topnav.classList.add("sticky");
+             } else {
+            topnav.classList.remove("sticky");
+              }
+        }
+        $(document).ready(function(){
+             $(window).scroll(function () {
+                    if ($(this).scrollTop() > 50) {
+                        $('#back-to-top').fadeIn();
+                    } else {
+                        $('#back-to-top').fadeOut();
+                    }
+                });
+                // scroll body to 0px on click
+                $('#back-to-top').click(function () {
+                    $('#back-to-top').tooltip('hide');
+                    $('body,html').animate({
+                        scrollTop: 0
+                    }, 800);
+                    return false;
+                });
+                
+                $('#back-to-top').tooltip('show');
+        
+        });
+        </script>
+</html>
